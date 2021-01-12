@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navigationBar {
+  position: relative;
+  width: 100%;
+  min-height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  background: #649664;
+  color: #fff;
+}
+
+.navigationBar__drawerBtn {
+  position: absolute;
+  top: calc($navigationBarHeight/2);
+  left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  cursor: pointer;
+}
+
+.navigationBar__drawerBtn i {
+  font-size: 1.5rem;
+}
+
+.navigationBar__drawerBtn:hover {
+  color: #353535;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+  -webkit-transition-property: color;
+  transition-property: color;
+}
+
+.navigationBar__wrapper {
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+.navigationBar__leftMenu {
+  cursor: pointer;
+}
+
+.navigationBar__logoTxt {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.navigationBar__rightMenu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  font-weight: 400;
+}
+
+.navigationBar__rightMenu ul li {
+  margin-left: 2rem;
+}
+
+.navigationBar__rightMenu ul li a:hover {
+  color: #353535;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+  -webkit-transition-property: color;
+  transition-property: color;
+}
+/*# sourceMappingURL=NavigationBar.css.map */

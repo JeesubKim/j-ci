@@ -1,0 +1,77 @@
+@import '../../../scss/variables';
+@import '../../../scss/utils';
+
+$navigationBarHeight: 45px;
+$navigationBarFont:1.3rem;
+$navigationBarItemMargin:2rem;
+
+$navigationDrawerBtnSize:1.5rem;
+$navigationHoverColor:rgb(53, 53, 53);
+
+@mixin hover_effect{
+    color:$navigationHoverColor;
+    transition: .2s ease;
+    transition-property: color;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style:none;
+}
+a{
+    text-decoration: none;
+    color:$primaryFontColor;
+}
+.navigationBar{
+    position:relative;
+    width:100%;
+    min-height:$navigationBarHeight;
+    @include display-flex(center, center);
+    background: $primaryBgColor;
+    // color:#fff;
+    color:$primaryFontColor;
+    &__drawerBtn{
+        position: absolute;
+        top:calc($navigationBarHeight/2);
+        left:20px;
+        @include display-flex(center,center);
+        cursor:pointer;
+        i{
+            font-size:$navigationDrawerBtnSize;
+        }
+        &:hover{
+            @include hover_effect();
+        }
+    }
+    &__wrapper{
+        width:$primaryContentWidth;
+        @include display-flex(space-between,center);
+    }
+    &__leftMenu{
+        cursor:pointer;
+
+    }
+    &__logoTxt{
+        font-weight: 700;
+        font-size:$navigationBarFont;
+    }
+    &__rightMenu{
+        
+        ul{
+            @include display-flex(center,center);
+            font-weight: 400;
+            li{
+                margin-left:$navigationBarItemMargin;
+
+                & a:hover{
+                    @include hover_effect();
+                }
+            }
+        }
+    }
+
+}
